@@ -19,10 +19,11 @@ export const List = () => {
     return (
         <div className="p-8">
             <h1 className="text-2xl font-bold mb-4">User List</h1>
-            <ul className={clsx('list-disc pl-5 space-y-2')}>
+            <ul className={clsx('list-disc pl-5 space-y-2 list-none')}>
                 {users.map((user) => (
                     <li key={user.id} className="text-lg font-medium">
-                        {user.name}
+                        {user.id}, {user.name}, {user.username}, {user.email},{' '}
+                        {user.phone}
                     </li>
                 ))}
             </ul>
