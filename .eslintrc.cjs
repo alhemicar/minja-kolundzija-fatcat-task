@@ -18,7 +18,12 @@ const config = {
         'prettier',
     ],
     ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js'],
-    settings: {react: {version: '18.2'}},
+    settings: {
+        react: { version: '18.2' },
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
     parser: '@typescript-eslint/parser',
     plugins: [
         'react-refresh',
@@ -35,18 +40,16 @@ const config = {
         sourceType: "module",
         ecmaFeatures: {
             jsx: true
-        }
+        },
+        project: "./tsconfig.json",
+        tsconfigRootDir: "./"
     },
     overrides: [
-        {
-            extends: [
-                'plugin:@typescript-eslint/recommended-requiring-type-checking',
-            ],
-            files: ['*.ts', '*.tsx', '*.cjs', '*.mjs'],
-            parserOptions: {
-                project: path.join(__dirname, 'tsconfig.json'),
-            },
-        },
+      {
+        files: ['*.ts', '*.tsx'], // Specify the files this override applies to
+        extends: ['plugin:@typescript-eslint/recommended'], // Use the recommended rules from the plugin
+        // You can add more configuration options here as needed
+      },
     ],
     rules: {
         'react-refresh/only-export-components': [

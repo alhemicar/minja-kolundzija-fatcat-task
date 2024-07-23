@@ -1,8 +1,21 @@
 import clsx from 'clsx';
 
-import { Button } from './Button.jsx';
+import { Button } from '@components/Button';
 
-export const Cards = ({ cards }) => {
+interface Card {
+    title: string;
+    image: string;
+    description: string;
+    background: string;
+    onClick: () => void;
+    buttonText: string;
+}
+
+interface Cards {
+    cards: Card[];
+}
+
+export const Cards = ({ cards }: Cards) => {
     return (
         <div className={clsx('flex', 'justify-center', 'items-center')}>
             <div className={clsx('grid', 'grid-cols-2', 'gap-8', 'w-8/12')}>
@@ -34,7 +47,9 @@ export const Cards = ({ cards }) => {
                                     {description}
                                 </div>
                             </div>
-                            <Button onClick={onClick}>{buttonText}</Button>
+                            <Button onClick={onClick} className="">
+                                {buttonText}
+                            </Button>
                         </div>
                     )
                 )}

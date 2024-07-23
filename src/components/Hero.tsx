@@ -1,4 +1,10 @@
-export const Hero = ({ title, image }) => {
+interface Hero {
+    title?: string;
+    image?: string;
+    children?: React.ReactNode;
+}
+
+export const Hero = ({ title, image }: Hero) => {
     return (
         <div className="flex row justify-center items-center gap-4 h-screen">
             <div className="w-4/12">
