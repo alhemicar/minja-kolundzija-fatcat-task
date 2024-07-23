@@ -1,9 +1,6 @@
-interface Hero {
-    image?: string;
-    children?: React.ReactNode;
-}
+import { IHeroProps } from '@homework-task/interfaces/IHero';
 
-export const Hero = ({ title, image }: Hero) => {
+export const Hero = ({ title, image }: IHeroProps) => {
     return (
         <div className="flex row justify-center items-center gap-4 h-screen">
             <div className="w-4/12">

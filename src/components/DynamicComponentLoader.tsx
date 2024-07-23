@@ -2,6 +2,7 @@ import { Hero } from '@components/Hero';
 import { ItemsShowcase } from '@components/ItemsShowcase';
 import { Layout } from '@components/Layout';
 import { TrustBar } from '@components/TrustBar';
+import { IHeroProps } from '@homework-task/interfaces/IHero';
 import { IItemsShowcaseProps } from '@homework-task/interfaces/IItemShowcase';
 import { ITrustBarProps } from '@homework-task/interfaces/ITrustBar';
 
@@ -13,11 +14,6 @@ interface LayoutProps extends BaseComponentProps {
     background?: string;
 }
 
-interface HeroProps extends BaseComponentProps {
-    title: string;
-    image: string;
-}
-
 // Component definition interfaces
 interface LayoutComponentDefinition {
     type: 'layoutSection';
@@ -27,7 +23,7 @@ interface LayoutComponentDefinition {
 
 interface HeroComponentDefinition {
     type: 'componentHero';
-    props: HeroProps;
+    props: IHeroProps;
     components?: ComponentDefinition[];
 }
 
@@ -111,7 +107,7 @@ export const DynamicComponentLoader = ({ components }: Components) => {
 
                 if (isHero(component)) {
                     Component = Component as typeof Hero;
-                    component.props = component.props as HeroProps;
+                    component.props = component.props as IHeroProps;
                 }
 
                 if (isLayout(component)) {
