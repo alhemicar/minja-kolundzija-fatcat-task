@@ -19,6 +19,12 @@ In the ***src/components*** folder, you will find several
 components. Your goal is to enhance these components with
 appropriate TypeScript interfaces and types.
 
+@minja:
+This task was pretty straightforward. I started with changing
+all of the jsx to tsx, added tsconfig and installed TS related
+packages. After that I started to work on interfaces, so that
+all existing components can have interfaces that TS requires.
+
 ### Create a List Component
 
 Develop a React component that is both scalable and reusable,
@@ -28,6 +34,12 @@ https://jsonplaceholder.typicode.com/users. For each item
 in the list, ensure that the following keys are displayed:
 ***id***, ***name***, ***email***, ***dateOfBirth***, and ***phone***.
 
+@minja
+This was an easy task. Fetch from API and display in ul
+with li elements. I added interfaces for the data that is
+being fetched and displayed and loading when the data is being fetched.
+Also there is an issue with this read file and word file, since there is 
+no date of birth.
 
 ### Create a Form Generator Component
 
@@ -77,6 +89,13 @@ Component Example **(this does not have to be the exact implementation)**:
 />
 ```
 
+@minja
+Well this was the one that that took me the most time. I do not have
+experience with zod, mostly been using yup, but at the time I was ok,
+let's try it out and see what happens. And oh boy did I get stuck on this one.
+After second iteration from scratch I finally managed to finish this one.
+In the end, typescript gave the biggest headache due to not allowing 
+any, and first iteration failed because of that one TS issue.
 
 ### Create a Page Generator Component
 Your task is to create a reusable React component for
@@ -129,6 +148,11 @@ const data = [
 
 ```
 
+@minja
+This one was a simple one to finish, but a lot of work to make it work
+with TS, due to different types of components that could be outputted.
+I really liked this one, good task, cudos to the people that came up with it.
+
 ### Additional Requirements
 You will have to complete all of these for your task to be considered done.
 
@@ -142,3 +166,8 @@ You will have to complete all of these for your task to be considered done.
 
 
 ### Note: You can override this document
+
+@minja
+This is all from me for this time. I edited a lot, wrote down my thoughts and had fun with this test.
+I hope you will like it :)
+```

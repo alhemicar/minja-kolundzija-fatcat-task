@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { Card } from '@components/landing/Card';
+import { Card } from '@homework-task/components/landing/Card';
 
 const vscodeProjectLink = `vscode://file/${__CWD__}`;
 

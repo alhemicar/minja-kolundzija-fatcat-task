@@ -1,7 +1,7 @@
-import { Hero } from '@components/Hero';
-import { ItemsShowcase } from '@components/ItemsShowcase';
-import { Layout } from '@components/Layout';
-import { TrustBar } from '@components/TrustBar';
+import { Hero } from '@homework-task/components/Hero';
+import { ItemsShowcase } from '@homework-task/components/ItemsShowcase';
+import { Layout } from '@homework-task/components/Layout';
+import { TrustBar } from '@homework-task/components/TrustBar';
 import { IHeroProps } from '@homework-task/interfaces/IHero';
 import { IItemsShowcaseProps } from '@homework-task/interfaces/IItemShowcase';
 import { ITrustBarProps } from '@homework-task/interfaces/ITrustBar';

@@ -23,7 +23,6 @@
     "baseUrl": "./", 
     "paths": {
       "@homework-task/*": ["./src/*"],
-      "@components/*": ["./src/components/*"]
     }
   },
   "include": [

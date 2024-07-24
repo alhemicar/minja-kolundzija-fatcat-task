@@ -46,9 +46,8 @@ const config = {
     },
     overrides: [
       {
-        files: ['*.ts', '*.tsx'], // Specify the files this override applies to
-        extends: ['plugin:@typescript-eslint/recommended'], // Use the recommended rules from the plugin
-        // You can add more configuration options here as needed
+        files: ['*.ts', '*.tsx'],
+        extends: ['plugin:@typescript-eslint/recommended'],
       },
     ],
     rules: {

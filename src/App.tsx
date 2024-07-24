@@ -3,10 +3,10 @@ import './styles.css';
 import {
     ComponentDefinition,
     DynamicComponentLoader,
-} from './components/DynamicComponentLoader';
-import { Form } from './components/Form';
-import { Landing } from './components/landing/Landing';
-import { List } from './components/List';
+} from '@homework-task/components/DynamicComponentLoader';
+import { Form } from '@homework-task/components/Form';
+import { Landing } from '@homework-task/components/landing/Landing';
+import { List } from '@homework-task/components/List';
 
 function App() {
     const formFields = [
